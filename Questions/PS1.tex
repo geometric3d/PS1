@@ -331,13 +331,13 @@ For questions where you must fill in a blank, please make sure your final answer
 % currently it is stated that these questions will not be graded, but must be finished
 \clearpage
 
-\section{Written Questions}
+% \section{Written Questions}
 
-\subsection{Vector Spaces}
+\section{Vector Spaces  [8pts]}
 \begin{questions}
 
-\question Which of the following subsets of $\mathbb{R}^3$ are vector spaces?
-    \textbf{Select all that are true:}
+\question \textbf{[2 pts]} Which of the following subsets of $\mathbb{R}^3$ are vector spaces?
+    \textbf{Select all that are true:} \textbf{[2 pts]}
     \checkboxchar{$\Box$} \checkedchar{$\blacksquare$}
     \begin{checkboxes}
         \choice The plane formed by the vector $(v_1, v_2, v_3) $ such that $v_1 = v_2$
@@ -346,8 +346,8 @@ For questions where you must fill in a blank, please make sure your final answer
         \choice All linear combinations of $\vv = (1, 4, 0)$ and $\wv = (2, 2, 2)$
     \end{checkboxes}
 
-\question For the following questions, consider a matrix $\Av \in \mathbb{R}^{m \times n}$ and a vector $b \in \mathbb{R}^n$. Answer True or false (with a counterexample if false):
-    \textbf{Select all that are true:}
+\question \textbf{[2 pts]} For the following questions, consider a matrix $\Av \in \mathbb{R}^{m \times n}$ and a vector $b \in \mathbb{R}^n$. Answer True or false (with a counterexample if false):
+    \textbf{Select all that are true:} 
     \begin{checkboxes}
         \choice The vectors b that are not in the column space $\Cv(\Av)$ form a subspace.
         \choice If $\Cv(\Av)$ contains only zero vectors, then $\Av$ is the zero matrix.
@@ -355,7 +355,7 @@ For questions where you must fill in a blank, please make sure your final answer
         \choice The column space of the matrix $\Av - \Iv$ equals the column space of $\Av$
     \end{checkboxes}
 
-\question Create a $3 \times 4$ matrix whose solution to $\Av \xv = 0$ is the $\sv_1=\begin{bmatrix}
+\question \textbf{[2 pts]} Create a $3 \times 4$ matrix whose solution to $\Av \xv = 0$ is the $\sv_1=\begin{bmatrix}
          -3 \\
          1 \\
          0 \\
@@ -406,7 +406,7 @@ For questions where you must fill in a blank, please make sure your final answer
 %         %
 %     \end{tcolorbox}
 
-\question If a $3{\times}4$ matrix has rank $3$, what are its column space and left nullspace?
+\question \textbf{[2 pts]} If a $3{\times}4$ matrix has rank $3$, what are its column space and left nullspace?
 
     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
         %
@@ -426,9 +426,9 @@ For questions where you must fill in a blank, please make sure your final answer
 
 \end{questions}
 \clearpage
-\subsection{Eigenvalues, Eigenvector, Singular Value Decomposition}
+\section{Eigenvalues, Eigenvector, Singular Value Decomposition [17 pts]}
 \begin{questions}
-    \question Deduce the Eigenvalue and Eigenvectors of $\Av$:
+    \question \textbf{[2 pts]}  Deduce the Eigenvalue and Eigenvectors of $\Av$:
     \begin{align*}
         \begin{bmatrix}
             1 & 2 \\ 2 & 4
@@ -438,7 +438,7 @@ For questions where you must fill in a blank, please make sure your final answer
         %
     \end{tcolorbox}
 
-    \question For
+    \question \textbf{[2 pts]}   For
     \begin{align*}
          \Av = \begin{bmatrix}
              2 & -1 \\ -1 & 2
@@ -450,7 +450,7 @@ For questions where you must fill in a blank, please make sure your final answer
     %
     \end{tcolorbox}
 
-    \question $\Av \in \mathbb{R}^{m \times n}$ is positive definite if for any \textbf{non-zero} vector $\xv \in \mathbb{R}^{n}$  we have $\xv^\top \Av \xv > 0$:
+    \question \textbf{[2 pts]}  $\Av \in \mathbb{R}^{m \times n}$ is positive definite if for any \textbf{non-zero} vector $\xv \in \mathbb{R}^{n}$  we have $\xv^\top \Av \xv > 0$:
     \begin{align*}
         \xv^\top \Av \xv = \begin{bmatrix}
             x & y
@@ -479,17 +479,17 @@ For questions where you must fill in a blank, please make sure your final answer
     %
     \end{tcolorbox}
 
-    \clearpage
-    \question When is the symmetric block matrix $\mathbf{M}$ positive definite:
-    \begin{align*}
-        M=\begin{bmatrix}
-                 A &  B  \\
-                 B^{T} & C
-                \end{bmatrix}
-    \end{align*}
-    \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    %
-    \end{tcolorbox}
+    % \clearpage
+    % \question When is the symmetric block matrix $\mathbf{M}$ positive definite:
+    % \begin{align*}
+    %     M=\begin{bmatrix}
+    %              A &  B  \\
+    %              B^{T} & C
+    %             \end{bmatrix}
+    % \end{align*}
+    % \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
+    % %
+    % \end{tcolorbox}
 
     % \question Without any equation, find the SVD of $\Av$
     % \begin{align*}
@@ -502,7 +502,7 @@ For questions where you must fill in a blank, please make sure your final answer
     % %
     % \end{tcolorbox}
 
-    \question Estimate the singular values $\sigma_1$ and $\sigma_2$ of the matrix $\Av$
+    \question \textbf{[3 pts]}   Estimate the singular values $\sigma_1$ and $\sigma_2$ of the matrix $\Av$
     \begin{align*}
         \Av = \begin{bmatrix}
             1 & 0 \\ C & 1
@@ -513,7 +513,7 @@ For questions where you must fill in a blank, please make sure your final answer
     %
     \end{tcolorbox}
 
-    \question Find the pseudoinverse of $\Av \in \mathbb{R}^{m \times n}$
+    \question \textbf{[3 pts]}  Find the pseudoinverse of $\Av \in \mathbb{R}^{m \times n}$
     \begin{align*}
         \Av = \begin{bmatrix}
             2 & 2 \\ 1 & 1
@@ -538,7 +538,7 @@ For questions where you must fill in a blank, please make sure your final answer
     % %
     % \end{tcolorbox}
     
-    \question Suppose the following information is known about matrix $\mathbf{A}$:
+    \question \textbf{[5 pts]} Suppose the following information is known about matrix $\mathbf{A}$:
     
     \begin{align*}
     \mathbf{A} \begin{bmatrix}
@@ -556,15 +556,19 @@ For questions where you must fill in a blank, please make sure your final answer
     \end{bmatrix}
     \end{align*}
     \begin{enumerate}[label=\Roman*]
-        \item Find the eigenvalues of $\mathbf{A}$
+        \item \textbf{[2 pts]} Find the eigenvalues of $\mathbf{A}$
         % \item Find the corresponding eigenspaces
-        \item In each of the following subquestions, please justify with a reason (based on the theory of eigenvalues and eigenvectors).
+        \item \textbf{[3 pts]} In each of the following subquestions, please justify with a reason (based on the theory of eigenvalues and eigenvectors).
         \begin{enumerate}
             \item Is $\mathbf{A}$ a diagonalizable matrix?
             \item Is $\mathbf{A}$ an invertible matrix?
             % \item Is $\mathbf{A}$ a projection matrix?
         \end{enumerate}
+
     \end{enumerate}
+    \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
+    %
+    \end{tcolorbox}     
     
 \end{questions}
 
