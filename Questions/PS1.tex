@@ -235,10 +235,6 @@
 \postdate{}
 \date{}
 
-% Don't display an author and remove the white space
-%\preauthor{}
-%\postauthor{}
-
 %%%%%%%%%%%%%%%%%%
 % Begin Document %
 %%%%%%%%%%%%%%%%%%
@@ -249,14 +245,13 @@
 \section*{}
 \begin{center}
   \textsc{\LARGE \hwNum} \\
-  \textsc{\LARGE \hwTopic\footnote{Compiled on \today{} at \currenttime{}}} \\
+%   \textsc{\LARGE \hwTopic\footnote{Compiled on \today{} at \currenttime{}}} \\
   \vspace{1em}
   \textsc{\large \courseNum{} \courseName{} (\courseSem)} \\
   %\vspace{0.25em}
   \courseUrl\\
   \vspace{1em}
   OUT: \outDate \\
-  %\vspace{0.5em}
   DUE: \dueDate \\
   Instructor: \instructorName \\
   TAs: \taNames
@@ -272,12 +267,8 @@
 
 \begin{itemize}
 
-% Since we are not using Canvas this semester.
-% \item \textbf{Canvas:} We will use an online system called Canvas for short answer and multiple choice questions. You can log in with your Andrew ID and password. (As a reminder, never enter your Andrew password into any website unless you have first checked that the URL starts with "https://" and the domain name ends in ".cmu.edu" -- but in this case it's OK since both conditions are met).  You may only \textbf{submit once} on canvas, so be sure of your answers before you submit.  However, canvas allows you to work on your answers and then close out of the page and it will save your progress.  You will not be granted additional submissions, so please be confident of your solutions when you are submitting your assignment.
-
 \item We will be using Gradescope (\url{https://gradescope.com/}) to submit the Problem Sets. Please use the provided template. Submissions can be written in LaTeX. Regrade requests can be made, however this gives the TA the opportunity to regrade your entire paper, meaning if additional mistakes are found then points will be deducted.
-Each derivation/proof should be  completed on a separate page. For short answer questions you \textbf{should} include your work in your solution.  %{\color{red} Since this assignment is for self-review. For this assignment only, you are not required to submit the solution for grading. Solution for this homework will be released on Piazza.}
-
+Each derivation/proof should be  completed on a separate page. For short answer questions you \textbf{should} include your work in your solution.  
 \end{itemize}
 
 \item \textbf{Materials:} The data that you will need in order to complete this assignment is posted along with the writeup and template on Piazza.
@@ -296,9 +287,9 @@ For ``Select One" questions, please fill in the appropriate bubble completely:
 \textbf{Select One:} Who taught this course?
      \begin{checkboxes}
      \CorrectChoice Shubham Tulsiani
-     \choice Marie Curie
-     \choice Noam Chomsky
-     \choice Martial Hebert
+     \choice Deepak Pathak
+     \choice Fernando De la Torre
+     \choice Deva Ramanan
     \end{checkboxes}
 \end{quote}
 
@@ -327,11 +318,7 @@ For questions where you must fill in a blank, please make sure your final answer
     \end{tcolorbox}\hspace{2cm}
 \end{quote}
 
-% added course policy section
-% currently it is stated that these questions will not be graded, but must be finished
 \clearpage
-
-% \section{Written Questions}
 
 \section{Vector Spaces  [8pts]}
 \begin{questions}
@@ -371,58 +358,12 @@ For questions where you must fill in a blank, please make sure your final answer
         %
     \end{tcolorbox}
 
-% \question Answer True or False for the following questions. \textbf{Select all that are True}
-
-%     \textbf{Select all that apply:}
-%     \begin{checkboxes}
-%     {%
-%     \checkboxchar{$\Box$} \checkedchar{$\blacksquare$}
-%         \choice A square matrix has no free variables.
-%         \choice An invertible matrix has no free variables.
-%         \choice A $m \times n$ matrix has more than n pivot variables.
-%         \choice A $m \times n$ matrix has no more than m pivot variables.
-%         }
-%     \end{checkboxes}
-% \clearpage
-% \question For the given matrix $$\Av = \begin{bmatrix}
-%          1 & 0 & 0 \\
-%          2 & 1 & 0 \\
-%          5 & 0 & 1
-%         \end{bmatrix}
-% 	\begin{bmatrix}
-%          1 & 3 & 0 & 5 \\
-%          0 & 0 & 1 & 6 \\
-%          0 & 0 & 0 & 0
-%         \end{bmatrix}$$
-%         Without explicitly computing $\Av$ find the bases and dimensions of all four fundamental subspaces of $\Av$:
-
-%     \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%         %
-%     \end{tcolorbox}
-
-% \question If a $7{\times}9$ matrix has rank $5$, what are the dimensions of the four subspaces? What is the sum of all four dimensions?
-
-%     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%         %
-%     \end{tcolorbox}
 
 \question \textbf{[2 pts]} If a $3{\times}4$ matrix has rank $3$, what are its column space and left nullspace?
 
     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-        %
     \end{tcolorbox}
 
-% \question Determine the value of $x$ for which $\begin{bmatrix}
-%     1 \\ x \\ 2
-% \end{bmatrix}$ is in the span of $\mathcal{S} = \Biggl\{ \begin{bmatrix}
-%     1 \\ 2 \\ -1
-% \end{bmatrix} , \begin{bmatrix}
-%     -1 \\ -2 \\ 2 
-% \end{bmatrix} \Biggl\} $
-
-%     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%         %
-%     \end{tcolorbox}
 
 \end{questions}
 \clearpage
@@ -435,7 +376,6 @@ For questions where you must fill in a blank, please make sure your final answer
         \end{bmatrix}
     \end{align*}
     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-        %
     \end{tcolorbox}
 
     \question \textbf{[2 pts]}   For
@@ -447,7 +387,6 @@ For questions where you must fill in a blank, please make sure your final answer
      Find the Eigenvalues and Eigenvectors of $\Av, \Av^2$ and $\Av^{-1}$ and $\Av + 4\Iv$
 
     \begin{tcolorbox}[fit,height=6cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    %
     \end{tcolorbox}
 
     \question \textbf{[2 pts]}  $\Av \in \mathbb{R}^{m \times n}$ is positive definite if for any \textbf{non-zero} vector $\xv \in \mathbb{R}^{n}$  we have $\xv^\top \Av \xv > 0$:
@@ -476,31 +415,8 @@ For questions where you must fill in a blank, please make sure your final answer
                 \end{bmatrix}
     \end{align*}
     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    %
     \end{tcolorbox}
 
-    % \clearpage
-    % \question When is the symmetric block matrix $\mathbf{M}$ positive definite:
-    % \begin{align*}
-    %     M=\begin{bmatrix}
-    %              A &  B  \\
-    %              B^{T} & C
-    %             \end{bmatrix}
-    % \end{align*}
-    % \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    % %
-    % \end{tcolorbox}
-
-    % \question Without any equation, find the SVD of $\Av$
-    % \begin{align*}
-    %     \Av = \begin{bmatrix}
-    %         2 & 2 \\ 1 & 1
-    %     \end{bmatrix}
-    % \end{align*}
-
-    % \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    % %
-    % \end{tcolorbox}
 
     \question \textbf{[3 pts]}   Estimate the singular values $\sigma_1$ and $\sigma_2$ of the matrix $\Av$
     \begin{align*}
@@ -520,24 +436,8 @@ For questions where you must fill in a blank, please make sure your final answer
         \end{bmatrix}
     \end{align*}
     \begin{tcolorbox}[fit,height=2cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    %
     \end{tcolorbox}
 
-    % \question Find the inverse and the eigenvalues and the determinant of $\Av$:
-    % \begin{align*}
-    %     A=\begin{bmatrix}
-    %          4 & -1 & -1 & 1  \\
-    %         -1 & 4 & -1 & -1 \\
-    %         -1 & -1 & 4 & -1 \\
-    %         -1 & -1 & -1 & 4\\
-    %     \end{bmatrix}
-    % \end{align*}
-    % Describe an Eigenvector matrix $\Sv$ such that $\Sv^{-1} \Av \Sv = \Lambdav$
-
-    % \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    % %
-    % \end{tcolorbox}
-    
     \question \textbf{[4 pts]} Suppose the following information is known about matrix $\mathbf{A}$:
     
     \begin{align*}
@@ -557,7 +457,6 @@ For questions where you must fill in a blank, please make sure your final answer
     \end{align*}
     \begin{enumerate}[label=\Roman*]
         \item \textbf{[2 pts]} Find the eigenvalues of $\mathbf{A}$
-        % \item Find the corresponding eigenspaces
         \item \textbf{[3 pts]} In each of the following subquestions, please justify with a reason (based on the theory of eigenvalues and eigenvectors).
         \begin{enumerate}
             \item Is $\mathbf{A}$ a diagonalizable matrix?
@@ -567,153 +466,55 @@ For questions where you must fill in a blank, please make sure your final answer
 
     \end{enumerate}
     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-    %
     \end{tcolorbox}     
     
 \end{questions}
 
 \clearpage
-% \subsection{Planar Homographies: Theory}
 
+\textbf{Collaboration Questions} Please answer the following:
 
-% Suppose we have two cameras $\Cv_1$ and $\Cv_2$ looking at a common plane $\Piv$ in $\mathbb{R}^3$.
-% Any point $\Pv \in \mathbb{R}^3$ on $\Piv$ projects to a point $\pv \equiv \begin{bmatrix} u_1 & v_1 & 1 \end{bmatrix}^\top \in \mathbb{P}^1$ in camera $\Cv_1$ and
-% $\qv \equiv \begin{bmatrix} u_2 & v_2 & 1 \end{bmatrix}^\top \in \mathbb{P}^1$ in camera$\Cv_2$.
-% Since $\Pv$ lies on plane $\Piv$, there exists a relationship between $\pv$ and $\qv$.
+\begin{enumerate}
+    \item Did you receive any help whatsoever from anyone in solving this assignment?
+    \begin{checkboxes}
+     \choice Yes
+     \choice No
+    \end{checkboxes}
+    \begin{itemize}
+        \item If you answered `Yes', give full details:
+        \item (e.g. “Jane Doe explained to me what is asked in Question 3.4”)
+    \end{itemize}
 
-% In particular, there exists a common $3 \times 3$ matrix $\Hv$, so that for any $\pv$ and $\qv$, the following conditions holds:
-% \begin{equation}
-% \mathbf{p \equiv Hq} \label{eq:homography}
-% \end{equation}
+    \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
+    %Input your solution here.  Do not change any of the specifications of this solution box.
+    \end{tcolorbox}
 
-% We call this relationship \emph{planar homography}.
+    \item Did you give any help whatsoever to anyone in solving this assignment?
+    \begin{checkboxes}
+     \choice Yes
+     \choice No
+    \end{checkboxes}
+    \begin{itemize}
+        \item If you answered `Yes', give full details:
+        \item (e.g. “I pointed Joe Smith to section 2.3 since he didn’t know how to proceed with Question 2”)
+    \end{itemize}
 
-% \textbf{Note:} that both $\pv$ and $\qv$ are in homogeneous coordinates and the equivalence $\equiv$ means $\pv \propto \mathbf{Hq}$ (recall homogeneous
-% coordinates). It turns out in fact that this relationship is also true for cameras that are related by pure rotation but not looking points that lie on a plane.
+    \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
+    %Input your solution here.  Do not change any of the specifications of this solution box.
+    \end{tcolorbox}
 
-% \begin{questions}
-%     \question  Prove that there exists an $\Hv$ that satisfies \autoref{eq:homography} given two camera projection matrices $\Mv_1 \in \Rb^{3 \times 4}$ and $\Mv_2 \in \Rb^{3 \times 4}$ corresponding to cameras
-%     $Cv_1$, $\Cv_2$ respectively and a plane $\Piv$.  Produce only the proof of existence of $\Hv$ and not the algebraic expression. Do not produce an actual algebraic expression for $\mathbf{H}$.
-
-%     \textbf{Note:} A degenerate case may happen when the
-%     plane $\Pi$ contains both cameras' centers, in which case there are infinite
-%     choices of $\mathbf{H}$ satisfying \autoref{eq:homography}.  You can
-%     ignore this case in your answer.
-
-%     \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \question Prove that there exists an $\Hv$ that satisfies \autoref{eq:homography} given two cameras separated by a pure rotation.
-%     i.e., For $\Cv_1$
-%     \begin{align*}
-%         \pv = \Kv_1 \begin{bmatrix} \Iv & 0 \end{bmatrix} \Pv
-%     \end{align*}
-%     For $\Cv_2$
-%     \begin{align*}
-%         \qv = \Kv_2 \begin{bmatrix} \Rv & 0 \end{bmatrix} \Pv
-%     \end{align*}
-%     Note that $\Kv$ is not the same for the two cameras.
-
-%     \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \question Why is a planar homography not sufficient to map an arbitrary image of scene to another viewpoint?  State your answer concisely in one or
-%      two sentences.
-
-%     \begin{tcolorbox}[fit,height=3cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \textbf{\underline Use the following information to answer questions 4-9}
-%     We have a set of points $\pv = \{p_1, p_2, p_3, \dots, p_N\}$ in an image taken by camera $\Cv_1$ and corresponding points $\qv = \{q_1, q_2, q_3, \dots, q_N\}$ in an image taken by $\Cv_2$.
-%     Suppose we know that there exists an unknown homography $\Hv$ between corresponding points $\forall i \in \{1, 2, \dots, N\}$. Formally
-%     \begin{align*}
-%         \Hv : \Pb^1 \rightarrow \Pb^1 ;~~ p_i \equiv \Hv q_i,~~\forall i \in \{1, 2, \dots, N\} \label{eq:2}
-%     \end{align*}
-%     \question Given $N$ correspondences in $\pv$ and $\qv$ and using \label{eq:2}, derive a set of 2N independent linear equations in the form:
-%     \begin{align*}
-%         \Av \hv = \mathbf{0}
-%     \end{align*}
-%     where $\hv$ is a vector of the elements of $\Hv$ and $\Av$ is a matrix composed of elements derived from the point coordinates. Write out an expression for $\Av$.
-
-%     \begin{tcolorbox}[fit,height=4cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \clearpage
-
-%     \question How many elements are there in $\hv$?
-
-%     \begin{tcolorbox}[fit,height=1cm, width=3cm, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \question Given $N$ point pairs (correspondences), what are the dimensions of $\Av$?
-
-%     \begin{tcolorbox}[fit,height=1cm, width=3cm, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \question How many point pairs (correspondences) are required to solve the system?
-
-%     \begin{tcolorbox}[fit,height=1cm, width=3cm, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-%     \question Show how to estimate the elements in $\hv$ to find a solution to minimize this homogeneous linear least squares system.
-
-%     \begin{tcolorbox}[fit,height=4cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=center, valign=center, nobeforeafter]
-%     %
-%     \end{tcolorbox}
-
-% \end{questions}
-
-% \clearpage
-% \textbf{Collaboration Questions} Please answer the following:
-
-% \begin{enumerate}
-%     \item Did you receive any help whatsoever from anyone in solving this assignment?
-%     \begin{checkboxes}
-%      \choice Yes
-%      \choice No
-%     \end{checkboxes}
-%     \begin{itemize}
-%         \item If you answered `yes', give full details:
-%         \item (e.g. “Jane Doe explained to me what is asked in Question 3.4”)
-%     \end{itemize}
-
-%     \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
-%     %Input your solution here.  Do not change any of the specifications of this solution box.
-%     \end{tcolorbox}
-
-%     \item Did you give any help whatsoever to anyone in solving this assignment?
-%     \begin{checkboxes}
-%      \choice Yes
-%      \choice No
-%     \end{checkboxes}
-%     \begin{itemize}
-%         \item If you answered `yes', give full details: \underline{No}
-%         \item (e.g. “I pointed Joe Smith to section 2.3 since he didn’t know how to proceed with Question 2”)
-%     \end{itemize}
-
-%     \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
-%     %Input your solution here.  Do not change any of the specifications of this solution box.
-%     \end{tcolorbox}
-
-%     \item Did you find or come across code that implements any part of this assignment ? \\Yes/No. (See below policy on “found code”)
-%     \begin{checkboxes}
-%      \choice Yes
-%      \choice No
-%     \end{checkboxes}
-%     \begin{itemize}
-%         \item If you answered `yes', give full details: \underline{No}
-%         \item (book \& page, URL \& location within the page, etc.).
-%     \end{itemize}
-%     \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
-%     %Input your solution here.  Do not change any of the specifications of this solution box.
-%     \end{tcolorbox}
-% \end{enumerate}
+    \item Did you find or come across code that implements any part of this assignment ? 
+    \begin{checkboxes}
+     \choice Yes
+     \choice No
+    \end{checkboxes}
+    \begin{itemize}
+        \item If you answered `Yes', give full details: \underline{No}
+        \item (book \& page, URL \& location within the page, etc.).
+    \end{itemize}
+    \begin{tcolorbox}[fit,height=3cm,blank, borderline={1pt}{-2pt},nobeforeafter]
+    %Input your solution here.  Do not change any of the specifications of this solution box.
+    \end{tcolorbox}
+\end{enumerate}
 
 \end{document}
