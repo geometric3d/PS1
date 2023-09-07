@@ -188,13 +188,13 @@
 \newcommand{\courseName}{\href{https://geometric3d.github.io}{Geometry-based Methods in Vision}}
 \newcommand{\courseSem}{\href{https://geometric3d.github.io}{Fall 2022}}
 \newcommand{\courseUrl}{\url{https://piazza.com/cmu/fall2022/16822}}
-\newcommand{\hwNum}{Problem Set 2}
+\newcommand{\hwNum}{Problem Set 1}
 \newcommand{\hwTopic}{Projective Geometry and Homography }
 \newcommand{\hwName}{\hwNum: \hwTopic}
-\newcommand{\outDate}{Sep. 20, 2022}
-\newcommand{\dueDate}{Sep. 27, 2022 11:59 PM}
+\newcommand{\outDate}{Sep. 12, 2023}
+\newcommand{\dueDate}{Sep. 19, 2023 11:59 PM}
 \newcommand{\instructorName}{Shubham Tulsiani}
-\newcommand{\taNames}{Mosam Dabhi, Kangle Deng, Jenny Nan}
+\newcommand{\taNames}{Ben Eisner, Nupur Kumari}
 
 %\pagestyle{fancyplain}
 \lhead{\hwName}
@@ -261,7 +261,6 @@
 \begin{itemize}
 \item \textbf{Collaboration policy:} All are encouraged to work together BUT you must do your own work (code and write up). If you work with someone, please include their name in your write up and cite any code that has been discussed. If we find highly identical write-ups or code without proper accreditation of collaborators, we will take action according to university policies, i.e. you will likely fail the course. See the \href{https://www.dropbox.com/s/z6o0tinc9eaez46/L01_Overview.pdf?dl=0}{Academic Integrity Section} detailed in the initial lecture for more information.
 
-\item\textbf{Late Submission Policy:} There are \textbf{no} late days for Problem Set submissions.
 
 \item\textbf{Submitting your work:}
 
@@ -277,68 +276,71 @@ Each derivation/proof should be  completed on a separate page. For short answer 
 
 For multiple choice or select all that apply questions, replace \lstinline{\choice} with \lstinline{\CorrectChoice} to obtain a shaded box/circle, and don't change anything else.
 
+
+For questions where you must fill in a blank, please make sure your final answer is fully included in the given space. You may cross out answers or parts of answers, but the final answer must still be within the given space. We accept either LaTex pdfs or scanned documents as long as the location of each question is annotated properly.
+
+% \clearpage
+
+% \section*{Instructions for Specific Problem Types}
+
+% For ``Select One" questions, please fill in the appropriate bubble completely:
+
+% \begin{quote}
+% \textbf{Select One:} Who taught this course?
+%      \begin{checkboxes}
+%      \CorrectChoice Shubham Tulsiani
+%      \choice Deepak Pathak
+%      \choice Fernando De la Torre
+%      \choice Deva Ramanan
+%     \end{checkboxes}
+% \end{quote}
+
+% For ``Select all that apply" questions, please fill in all appropriate squares completely:
+
+% \begin{quote}
+% \textbf{Select all that apply:} Which are scientists?
+% {
+%     \checkboxchar{$\Box$} \checkedchar{$\blacksquare$}
+%     \begin{checkboxes}
+%      \CorrectChoice Stephen Hawking
+%      \CorrectChoice Albert Einstein
+%      \CorrectChoice Isaac Newton
+%      \choice None of the above
+%     \end{checkboxes}
+%     }
+% \end{quote}
+
+% For questions where you must fill in a blank, please make sure your final answer is fully included in the given space. You may cross out answers or parts of answers, but the final answer must still be within the given space.
+
+% \begin{quote}
+% \textbf{Fill in the blank:} What is the course number?
+
+% \begin{tcolorbox}[fit,height=1cm, width=4cm, blank, borderline={1pt}{-2pt},nobeforeafter, halign=center, valign=center]
+%     \begin{center}\huge16-822\end{center}
+%     \end{tcolorbox}\hspace{2cm}
+% \end{quote}
+
 \clearpage
 
-\section*{Instructions for Specific Problem Types}
-
-For ``Select One" questions, please fill in the appropriate bubble completely:
-
-\begin{quote}
-\textbf{Select One:} Who taught this course?
-     \begin{checkboxes}
-     \CorrectChoice Shubham Tulsiani
-     \choice Deepak Pathak
-     \choice Fernando De la Torre
-     \choice Deva Ramanan
-    \end{checkboxes}
-\end{quote}
-
-For ``Select all that apply" questions, please fill in all appropriate squares completely:
-
-\begin{quote}
-\textbf{Select all that apply:} Which are scientists?
-{
-    \checkboxchar{$\Box$} \checkedchar{$\blacksquare$}
-    \begin{checkboxes}
-     \CorrectChoice Stephen Hawking
-     \CorrectChoice Albert Einstein
-     \CorrectChoice Isaac Newton
-     \choice None of the above
-    \end{checkboxes}
-    }
-\end{quote}
-
-For questions where you must fill in a blank, please make sure your final answer is fully included in the given space. You may cross out answers or parts of answers, but the final answer must still be within the given space.
-
-\begin{quote}
-\textbf{Fill in the blank:} What is the course number?
-
-\begin{tcolorbox}[fit,height=1cm, width=4cm, blank, borderline={1pt}{-2pt},nobeforeafter, halign=center, valign=center]
-    \begin{center}\huge16-822\end{center}
-    \end{tcolorbox}\hspace{2cm}
-\end{quote}
-
-\clearpage
-
-\section{2D Projective Geometry  [18 pts]}
+\section{2D Projective Geometry  [36 pts]}
 \begin{questions}
 
-\question (a) \textbf{[2 pts]} Calculate the line passing through 2 given points: (1) $\pv_1= [3,4,1]^T, \pv_2 = [4,3,0]^T$, (2) $\pv_1= [3,4,2022]^T, \pv_2 = [3,4,-1967]^T$.
+\question (a) \textbf{[4 pts]} Calculate the line passing through 2 given points: (1) $\pv_1= [3,4,1]^T, \pv_2 = [4,3,0]^T$, (2) $\pv_1= [3,4,2022]^T, \pv_2 = [3,4,-1967]^T$.
 
-(b) \textbf{[2 pts]} Calculate the intersection point between 2 given lines: (1) $\lv_1 = [3,4,1]^T, \lv_2 = [0,0,1]^T $, (2) $\lv_1= [3,4,1]^T, \lv_2 = [3,4,2]^T$.
+(b) \textbf{[4 pts]} Calculate the intersection point between 2 given lines: (1) $\lv_1 = [3,4,1]^T, \lv_2 = [0,0,1]^T $, (2) $\lv_1= [3,4,1]^T, \lv_2 = [3,4,2]^T$.
 
 \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=left, valign=center, nobeforeafter]
 
 
 \end{tcolorbox}
 
-\question \textbf{[3 pts]} Suppose a conic in 2D projective space is given by $\Cv = \lv\mv^T + \mv\lv^T$, where $\lv$ and $\mv$ are 2 lines. Show that a point belongs to $\Cv$ if and only if it is on $\mv$ or $\lv$.
+\question \textbf{[6 pts]} Suppose a conic in 2D projective space is given by $\Cv = \lv\mv^T + \mv\lv^T$, where $\lv$ and $\mv$ are 2 lines. Show that a point belongs to $\Cv$ if and only if it is on $\mv$ or $\lv$.
 
 \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=left, valign=center, nobeforeafter]
 
 \end{tcolorbox}
 
-\question \textbf{[4 pts]} Given a transformation $\Hv = \begin{bmatrix}
+\question \textbf{[8 pts]} Given a transformation $\Hv = \begin{bmatrix}
                  3 & 0 & 0  \\
                  0 & 2 & 0  \\
                  0 & 0 & 1  \\
@@ -361,7 +363,7 @@ For questions where you must fill in a blank, please make sure your final answer
 
 \end{tcolorbox}
 
-\question \textbf{[4 pts]} Are these 2D projective transformations?
+\question \textbf{[8 pts]} Are these 2D projective transformations?
 
 (a) Reflection along a line,
 
@@ -387,7 +389,7 @@ For questions where you must fill in a blank, please make sure your final answer
 
 \end{tcolorbox}
 
-\question \textbf{[3 pts]} Are these statements true or false?
+\question \textbf{[6 pts]} Are these statements true or false?
 
 
 (a) Given a line $\lv$, if both $\Hv_A$ and $\Hv_B$ map $\lv$ to $[0,0,1]^T$, then $\Hv_A\Hv_B^{-1}$ is an affine transformation. 
@@ -403,9 +405,9 @@ For questions where you must fill in a blank, please make sure your final answer
 \end{tcolorbox}
 
 
-\section{3D Projective Geometry [12 pts]}
+\section{3D Projective Geometry [24 pts]}
 
-\question \textbf{[3 pts]} Show that the Plucker Representation of a 3D line $\Lv = \xv_1\xv_2^T - \xv_2\xv_1^T$ is equivalent to representing the line as $(\tilde \dv, \tilde \xv \times \tilde \dv)$, i.e. show they have the same elements up to scale.
+\question \textbf{[6 pts]} Show that the Plucker Representation of a 3D line $\Lv = \xv_1\xv_2^T - \xv_2\xv_1^T$ is equivalent to representing the line as $(\tilde \dv, \tilde \xv \times \tilde \dv)$, i.e. show they have the same elements up to scale.
 
 Notations: $\tilde\dv$ is the unit direction vector along the line, and $\tilde \xv$ is any point on the line. Note that $\tilde\xv$ and $\tilde\dv$ are 3-dim Euclidean coordinates while $\xv_1$ and $\xv_2$ are 4-dim homogeneous coordinates.
 
@@ -414,7 +416,7 @@ Notations: $\tilde\dv$ is the unit direction vector along the line, and $\tilde 
 
 \end{tcolorbox}
 
-\question \textbf{[2 pts]} Suppose $\Uv$ is a $4\times 4$ matrix. $\Uv_{4 \times 4} = [\uv_1, \uv_2, \uv_3, \uv_4]$ and $\Uv^T\Uv = \Iv$.
+\question \textbf{[4 pts]} Suppose $\Uv$ is a $4\times 4$ matrix. $\Uv_{4 \times 4} = [\uv_1, \uv_2, \uv_3, \uv_4]$ and $\Uv^T\Uv = \Iv$.
 
 (a) Suppose $\uv_1, \uv_2, \uv_3$ represent 3 points in the 3D space. What is the plane passing through these 3 points?
 
@@ -426,7 +428,7 @@ Notations: $\tilde\dv$ is the unit direction vector along the line, and $\tilde 
 
 \end{tcolorbox}
 
-\question \textbf{[4 pts]} (a) Calculate the 3D transformation $\Hv$ that represents the projection onto a plane $\pi = [\nv^T, 0]^T$, where $\nv = [a,b,c]^T$ is a unit vector.
+\question \textbf{[8 pts]} (a) Calculate the 3D transformation $\Hv$ that represents the projection onto a plane $\pi = [\nv^T, 0]^T$, where $\nv = [a,b,c]^T$ is a unit vector.
 
 (b) Calculate the 3D transformation $\Hv$ that represents the reflection along a plane $\pi = [\nv^T, 0]^T$, where $\nv = [a,b,c]^T$ is a unit vector.
 
@@ -436,7 +438,7 @@ Notations: $\tilde\dv$ is the unit direction vector along the line, and $\tilde 
 
 \end{tcolorbox}
 
-\question \textbf{[3 pts]} In the lecture, we introduced an algorithm to compute homography between images from 4 pairs of point correspondences. Design an algorithm that instead uses pairs of line correspondences. Write the constraints provided by each correspondence, and how to compute the $\Hv$ that satisfies these.
+\question \textbf{[6 pts]} In the lecture, we introduced an algorithm to compute homography between images from 4 pairs of point correspondences. Design an algorithm that instead uses pairs of line correspondences. Write the constraints provided by each correspondence, and how to compute the $\Hv$ that satisfies these.
 
 \begin{tcolorbox}[fit,height=5cm, width=\textwidth, blank, borderline={0.5pt}{-2pt},halign=left, valign=center, nobeforeafter]
 

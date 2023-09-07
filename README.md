@@ -1,8 +1,7 @@
-# PS2: Projective Geometry and Homography
+# PS1: Projective Geometry and Homography
 
 ## Instructions
-* No late days allowed for Problem Sets (PS).
-* There are `2` sections in this assignment, comprising `30 pts` in total.
+* There are `2` sections in this assignment, comprising `60 pts` in total.
 
 
 # How to submit problem sets (PS)?
